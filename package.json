@@ -5,6 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --define process.env.HOST='\"DEVELOPMENT\"' --hot --inline --host 0.0.0.0",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add",
+      "eslint",
+      "stylelint"
+    ]
   },
   "repository": {
     "type": "git",
