@@ -60,6 +60,7 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "connected-react-router": "^4.3.0",
     "history": "^4.7.2",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
@@ -67,7 +68,6 @@
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-router-redux": "^4.0.8",
     "redux": "^4.0.0",
     "redux-api-middleware": "^2.3.0",
     "redux-devtools-extension": "^2.13.5",
