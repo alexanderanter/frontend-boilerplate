@@ -8,7 +8,7 @@ import WebFont from 'webfontloader';
 import webFontConfig from './configs/webfonts';
 import Routes from './views/routes';
 import configureStore from './state';
-import colors from './views/constants/colors';
+import colors from './constants/colors';
 
 /* eslint-disable no-unused-expressions */
 injectGlobal`
