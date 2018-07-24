@@ -2,13 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = {
-  DIST: path.resolve(__dirname, '../server/public'),
+  DIST: path.resolve(__dirname, './dist'),
   JS: path.resolve(__dirname, './'),
-  SRC: path.resolve(__dirname, '.')
+  SRC: path.resolve(__dirname, './')
 };
 
 module.exports = {
-  entry: path.join(paths.JS, 'index.jsx'),
+  entry: path.join(paths.JS, 'index.js'),
   mode: 'development',
   output: {
     path: paths.DIST,
@@ -33,10 +33,7 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015'],
-          plugins: [
-            'babel-plugin-transform-class-properties',
-            'transform-object-rest-spread'
-          ]
+          plugins: ['babel-plugin-transform-class-properties', 'transform-object-rest-spread']
         }
       },
       {
