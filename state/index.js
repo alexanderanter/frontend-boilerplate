@@ -5,12 +5,14 @@ import createHistory from 'history/createBrowserHistory';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { reducer as form } from 'redux-form';
 import { apiMiddleware } from 'redux-api-middleware';
+import pingReducer from './ping';
 
 const history = createHistory();
 
 const composeEnhancers = composeWithDevTools({});
 const rootReducer = combineReducers({
-  form
+  form,
+  ping: pingReducer
 });
 
 /**
