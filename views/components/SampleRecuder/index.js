@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
+import { reduxForm, Form } from 'redux-form';
 import FlexBox from '../../common/FlexBox';
 
-const SampleReducer = () => (
-  <FlexBox align="center" justify="space-around">
-    <p>Sample Reducer:</p>
-    <Button variant="contained" color="primary">
-      Primary
-    </Button>
-  </FlexBox>
-);
+const propTypes = {
+  fetchPing: PropTypes.func.isRequired,
+  pingMessage: PropTypes.string.isRequired
+};
 
-export default SampleReducer;
+class SampleReducer extends Component {
+  handleSubmit = e => {
+    e.preventDefault();
+    /* eslint-disable */
+    this.props.fetchPing();
+    /* eslint-enable */
+  };
+
+  render() {
+    const { pingMessage } = this.props;
+
+    return (
+      <FlexBox align="center" justify="space-around">
+        <p>Sample Reducer:</p>
+        <Form onSubmit={this.handleSubmit}>
+          <Button type="submit" variant="contained" color="primary">
+            Ping!
+          </Button>
+        </Form>
+        <p>{pingMessage}</p>
+      </FlexBox>
+    );
+  }
+}
+
+SampleReducer.propTypes = propTypes;
+
+export default reduxForm({
+  form: 'pingForm'
+})(SampleReducer);
