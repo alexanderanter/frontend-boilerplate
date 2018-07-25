@@ -28,7 +28,9 @@ class SampleReducer extends Component {
             Ping!
           </Button>
         </Form>
-        <p>{pingMessage}</p>
+        <p>
+          {pingMessage ? `Server responded with: ${pingMessage}` : `Waiting for server response...`}
+        </p>
       </FlexBox>
     );
   }
