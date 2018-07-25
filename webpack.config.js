@@ -30,6 +30,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         include: path.join(__dirname, '/'),
+        exclude: /(node_modules|bower_compontents)/,
         loader: 'babel-loader',
         query: {
           presets: ['react', 'es2015'],
@@ -38,7 +39,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
+        exclude: /(node_modules|bower_compontents)/
       }
     ]
   },
