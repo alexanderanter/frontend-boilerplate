@@ -11,5 +11,5 @@ services:
     ports:
       - "3000:3000" #specify ports forwarding
     volumes:
-      - .:/home/web/app
-      - /home/web/app/node_modules
+      - .:/home/node/app
+      - /home/node/app/node_modules
