@@ -8,6 +8,7 @@ module.exports = {
     '!./coverage/lcov-report/*'
   ],
   setupFiles: ['./jest.setup.js'],
+  roots: ['./'],
   moduleDirectories: ['node_modules', '<rootDir>/src'],
   moduleFileExtensions: ['js', 'jsx'],
   moduleNameMapper: {
