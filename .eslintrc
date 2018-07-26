@@ -13,6 +13,7 @@
           }],
         "react/jsx-one-expression-per-line": 0,
         "react/jsx-filename-extension": 0,
+        "import/exports-last": 1,
         "react/no-multi-comp": ["error", { "ignoreStateless": false }],
         "prettier/prettier": "error",
         "linebreak-style": 0,
