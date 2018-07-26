@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { reduxForm, Form } from 'redux-form';
 import FlexBox from '../../common/FlexBox';
+import Spinner from '../../common/Spinner';
 
 const propTypes = {
   fetchPing: PropTypes.func.isRequired,
-  pingMessage: PropTypes.string.isRequired
+  pingMessage: PropTypes.string.isRequired,
+  loading: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired
 };
 
 class SampleReducer extends Component {
@@ -18,7 +21,8 @@ class SampleReducer extends Component {
   };
 
   render() {
-    const { pingMessage } = this.props;
+    const { pingMessage, loading, error } = this.props;
+    const message = error || pingMessage;
 
     return (
       <FlexBox align="center" justify="space-around">
@@ -28,9 +32,8 @@ class SampleReducer extends Component {
             Ping!
           </Button>
         </Form>
-        <p>
-          {pingMessage ? `Server responded with: ${pingMessage}` : `Waiting for server response...`}
-        </p>
+        {!loading && <p>{message ? `Server responded with: ${message}` : `Click the button...`}</p>}
+        {loading && <Spinner />}
       </FlexBox>
     );
   }
