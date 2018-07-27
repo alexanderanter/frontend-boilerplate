@@ -2,15 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
-import Spinner from './index';
+import Wrapper from './Wrapper';
 
-describe('Spinner', () => {
+describe('Wrapper', () => {
   let props;
   let wrapper;
 
-  const Wrapper = () => {
+  const Container = () => {
     if (!wrapper) {
-      wrapper = shallow(<Spinner {...props}>{props.children}</Spinner>);
+      wrapper = shallow(<Wrapper {...props}>{props.children}</Wrapper>);
     }
     return wrapper;
   };
@@ -23,7 +23,7 @@ describe('Spinner', () => {
 
   describe('without props', () => {
     it('Should match snapshot', () => {
-      expect(toJson(Wrapper())).toMatchSnapshot();
+      expect(toJson(Container())).toMatchSnapshot();
     });
   });
 });

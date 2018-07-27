@@ -1,15 +1,14 @@
 module.exports = {
   verbose: true,
   collectCoverageFrom: [
-    './**/*.jsx',
-    './**/*.js',
+    './**/*.{js, jsx}',
     '!./**/*.setup.js',
     '!./**/*.config.js',
     '!./coverage/lcov-report/*'
   ],
   setupFiles: ['./jest.setup.js'],
   roots: ['./'],
-  moduleDirectories: ['node_modules', '<rootDir>/src'],
+  moduleDirectories: ['node_modules'],
   moduleFileExtensions: ['js', 'jsx'],
   moduleNameMapper: {
     '^.+\\.(css|less)$': 'identity-obj-proxy'

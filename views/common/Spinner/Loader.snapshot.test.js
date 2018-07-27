@@ -2,15 +2,15 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
-import Spinner from './index';
+import Loader from './Loader';
 
-describe('Spinner', () => {
+describe('Loader', () => {
   let props;
   let wrapper;
 
   const Wrapper = () => {
     if (!wrapper) {
-      wrapper = shallow(<Spinner {...props}>{props.children}</Spinner>);
+      wrapper = shallow(<Loader {...props}>{props.children}</Loader>);
     }
     return wrapper;
   };
