@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage without props Should match snapshot 1`] = `
+<BasePage
+  title="welcome"
+>
+  <styled.div
+    align="center"
+    justify="space-around"
+  >
+    <p>
+      Sample routes:
+    </p>
+    <Link
+      replace={false}
+      to="/page-one"
+    >
+      Page 1
+    </Link>
+    <Link
+      replace={false}
+      to="/page-two"
+    >
+      Page 2
+    </Link>
+    <Link
+      replace={false}
+      to="/page-three"
+    >
+      Page 3
+    </Link>
+  </styled.div>
+  <hr />
+  <Connect(ReduxForm) />
+  <ReduxForm />
+</BasePage>
+`;
