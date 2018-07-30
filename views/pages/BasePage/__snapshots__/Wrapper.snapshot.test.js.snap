@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper without props Should match snapshot 1`] = `
+.c0 {
+  max-width: 1500px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+<div
+  className="c0"
+/>
+`;
