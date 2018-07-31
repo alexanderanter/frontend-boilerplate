@@ -1,26 +1,23 @@
-import { apiMiddleware, RequestError } from 'redux-api-middleware';
+import { apiMiddleware, ApiError } from 'redux-api-middleware';
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
-// import fetchMock from 'fetch-mock';
 import { getPingRequest } from './actions';
 import types from './types';
 
 const mockStore = configureMockStore([thunkMiddleware, apiMiddleware]);
 
-const fetchMock = require('fetch-mock');
-
 // describe unit
 describe('getPingRequest() async action creator', () => {
   afterEach(() => {
-    fetchMock.restore();
+    fetch.resetMocks();
   });
 
-  it('dispatches FETCH_PING_FAILURE action on failed request', done => {
+  it('dispatches FETCH_PING_FAILURE action on failed request', () => {
     const apiResponse = {
       message: 'Unexpected token <'
     };
 
-    fetchMock.mock('http://localhost:8080/ping', 500, apiResponse);
+    fetch.mockResponseOnce(apiResponse, { status: 500 });
 
     const expectedActions = [
       {
@@ -30,11 +27,11 @@ describe('getPingRequest() async action creator', () => {
         type: types.FETCH_PING_FAILURE,
         error: true,
         meta: undefined,
-        payload: new RequestError('No fallback response defined for GET to /ping', apiResponse)
+        payload: new ApiError(500, 'Internal Server Error', apiResponse)
       }
     ];
 
-    const store = mockStore({}, expectedActions, done);
+    const store = mockStore({});
 
     return store.dispatch(getPingRequest()).then(() => {
       const actions = store.getActions();
