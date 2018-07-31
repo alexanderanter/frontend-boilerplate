@@ -1,7 +1,7 @@
 import pingReducer from './reducers';
 import types from './types';
 
-describe('todos reducer', () => {
+describe('ping reducer', () => {
   it('should handle FETCH_PING_REQUEST', () => {
     expect(
       pingReducer([], {
