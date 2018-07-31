@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasePage without props Should match snapshot 1`] = `
+<styled.div>
+  <styled.h1>
+    PageTitle
+  </styled.h1>
+  <p>
+    Some Page
+  </p>
+</styled.div>
+`;

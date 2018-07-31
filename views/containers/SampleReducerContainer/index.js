@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import SampleReducer from '../../components/SampleRecuder';
+import SampleReducer from '../../components/SampleReducer';
 import { getPingRequest } from '../../../state/ping/actions';
 import { getPingMessage, pingHasError, pingIsLoading } from '../../../state/ping/selectors';
 

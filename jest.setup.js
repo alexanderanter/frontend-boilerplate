@@ -1,9 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import 'raf/polyfill';
-
-// eslint-disable no-extraneous-dependencies
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import 'jest-localstorage-mock';
-// eslint-enable no-extraneous-dependencies
+/* eslint-enable import/no-extraneous-dependencies */
 
 Enzyme.configure({ adapter: new Adapter() });
