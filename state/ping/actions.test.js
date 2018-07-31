@@ -1,4 +1,4 @@
-import { apiMiddleware, ApiError } from 'redux-api-middleware';
+import { apiMiddleware, RequestError } from 'redux-api-middleware';
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
 // import fetchMock from 'fetch-mock';
@@ -24,15 +24,15 @@ describe('getPingRequest() async action creator', () => {
 
     const expectedActions = [
       {
+        type: types.FETCH_PING_REQUEST,
         meta: undefined,
-        payload: undefined,
-        type: types.FETCH_PING_REQUEST
+        payload: undefined
       },
       {
+        type: types.FETCH_PING_FAILURE,
         error: true,
         meta: undefined,
-        payload: new ApiError(500, 'Internal Server Error', apiResponse),
-        type: types.FETCH_PING_FAILURE
+        payload: new RequestError('No fallback response defined for GET to /ping', apiResponse)
       }
     ];
 
