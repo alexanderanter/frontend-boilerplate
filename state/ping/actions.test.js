@@ -1,11 +1,13 @@
 import { apiMiddleware, ApiError } from 'redux-api-middleware';
 import configureMockStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
-import fetchMock from 'fetch-mock';
+// import fetchMock from 'fetch-mock';
 import { getPingRequest } from './actions';
 import types from './types';
 
 const mockStore = configureMockStore([thunkMiddleware, apiMiddleware]);
+
+const fetchMock = require('fetch-mock');
 
 // describe unit
 describe('getPingRequest() async action creator', () => {
@@ -18,7 +20,7 @@ describe('getPingRequest() async action creator', () => {
       message: 'Unexpected token <'
     };
 
-    fetchMock('http://localhost:8080/ping', 500, apiResponse);
+    fetchMock.mock('http://localhost:8080/ping', 500, apiResponse);
 
     const expectedActions = [
       {
@@ -36,6 +38,9 @@ describe('getPingRequest() async action creator', () => {
 
     const store = mockStore({}, expectedActions, done);
 
-    store.dispatch(getPingRequest());
+    return store.dispatch(getPingRequest()).then(() => {
+      const actions = store.getActions();
+      expect(actions).toEqual(expectedActions);
+    });
   });
 });
