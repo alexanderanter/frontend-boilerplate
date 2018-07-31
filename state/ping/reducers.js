@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   pingData: { message: '', error: null, loading: false }
 };
 
-const cardsReducer = (state = INITIAL_STATE, action) => {
+const pingReducer = (state = INITIAL_STATE, action) => {
   let error;
   switch (action.type) {
     case types.FETCH_PING_REQUEST:
@@ -23,4 +23,4 @@ const cardsReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default cardsReducer;
+export default pingReducer;
