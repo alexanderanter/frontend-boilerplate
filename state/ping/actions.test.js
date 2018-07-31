@@ -24,9 +24,7 @@ describe('getPingRequest() async action creator', () => {
 
     const expectedActions = [
       {
-        type: types.FETCH_PING_REQUEST,
-        meta: undefined,
-        payload: undefined
+        type: types.FETCH_PING_REQUEST
       },
       {
         type: types.FETCH_PING_FAILURE,
