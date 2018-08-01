@@ -26,6 +26,10 @@
   "bugs": {
     "url": "https://github.com/reftoken/frontend-boilerplate/issues"
   },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  },
   "homepage": "https://github.com/reftoken/frontend-boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
