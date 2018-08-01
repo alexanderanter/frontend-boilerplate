@@ -4,7 +4,9 @@ const INITIAL_STATE = {
   pingData: { message: '', error: null, loading: false }
 };
 
-const pingReducer = (state = INITIAL_STATE, action) => {
+const pingReducer = (state, action) => {
+  /* eslint-disable-next-line no-param-reassign */
+  state = state || /* istanbul ignore next */ INITIAL_STATE;
   let error;
   switch (action.type) {
     case types.FETCH_PING_REQUEST:
