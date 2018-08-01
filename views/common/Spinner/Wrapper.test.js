@@ -1,8 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
-import Wrapper from './Wrapper';
+import Wrapper from './index';
 
 describe('Wrapper', () => {
   let props;
@@ -22,17 +21,19 @@ describe('Wrapper', () => {
   });
 
   describe('without props', () => {
-    it('Should match snapshot', () => {
-      expect(toJson(Container())).toMatchSnapshot();
+    it('should have auto height', () => {
+      expect(Container()).toHaveStyleRule('height', 'auto');
     });
   });
 
   describe('with props', () => {
-    it('Should match snapshot', () => {
-      props = {
-        fullSize: true
-      };
-      expect(toJson(Container())).toMatchSnapshot();
+    props = {
+      fullSize: true
+    };
+    const tree = Container();
+
+    it('should have a height', () => {
+      expect(tree).toHaveStyleRule('height', '100vh');
     });
   });
 });
