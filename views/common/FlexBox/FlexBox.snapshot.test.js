@@ -26,4 +26,17 @@ describe('FlexBox', () => {
       expect(toJson(Wrapper())).toMatchSnapshot();
     });
   });
+
+  describe('with props', () => {
+    it('Should match snapshot', () => {
+      props = {
+        height: '100px',
+        wrap: true,
+        direction: 'column',
+        align: 'center',
+        justify: 'center'
+      };
+      expect(toJson(Wrapper())).toMatchSnapshot();
+    });
+  });
 });
