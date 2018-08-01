@@ -39,7 +39,7 @@ describe('Routes', () => {
   // Reset Component and Props before each test.
   beforeEach(() => {
     props = {};
-    initialEntries = [];
+    initialEntries = [{ pathname: '/', key: 'testKey' }];
     wrapper = undefined;
   });
 
