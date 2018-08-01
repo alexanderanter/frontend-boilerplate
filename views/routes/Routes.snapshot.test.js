@@ -46,6 +46,7 @@ describe('Routes', () => {
   describe('on / route', () => {
     it('should match snapshot for HomePage', () => {
       initialEntries = ['/'];
+      console.error = jest.fn();
       expect(toJson(Wrapper())).toMatchSnapshot();
     });
   });
