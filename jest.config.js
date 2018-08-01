@@ -8,7 +8,7 @@ module.exports = {
     '!**/constants/*',
     '!**/coverage/lcov-report/*',
     '!index.js',
-    '!state/index.js'
+    '!state/**/index.js'
   ],
   setupFiles: ['./jest.setup.js'],
   moduleDirectories: ['node_modules', '<rootDir>/src'],
