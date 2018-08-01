@@ -111,7 +111,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
         },
       ]
     }
-    keyLength={0}
   >
     <Router
       history={
