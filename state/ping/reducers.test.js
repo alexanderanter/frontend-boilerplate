@@ -25,6 +25,14 @@ describe('ping reducer', () => {
       })
     ).toEqual({ pingData: { error: 'error', loading: false, message: '' } });
   });
+  it('should handle FETCH_PING_FAILURE', () => {
+    expect(
+      pingReducer([], {
+        type: types.FETCH_PING_FAILED,
+        payload: { message: 'error' }
+      })
+    ).toEqual({ pingData: { error: 'error', loading: false, message: '' } });
+  });
   it('should handle none existing state', () => {
     expect(
       pingReducer([], {
