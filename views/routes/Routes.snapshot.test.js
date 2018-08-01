@@ -27,7 +27,7 @@ describe('Routes', () => {
     if (!wrapper) {
       wrapper = mount(
         <Provider store={store}>
-          <MemoryRouter initialEntries={initialEntries}>
+          <MemoryRouter initialEntries={initialEntries} keyLength={0}>
             <Routes {...props}>{props.children}</Routes>
           </MemoryRouter>
         </Provider>

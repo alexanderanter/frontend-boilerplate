@@ -108,6 +108,7 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
         "/",
       ]
     }
+    keyLength={0}
   >
     <Router
       history={
@@ -119,7 +120,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "n96pp4",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -133,7 +133,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "n96pp4",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -159,7 +158,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
             location={
               Object {
                 "hash": "",
-                "key": "n96pp4",
                 "pathname": "/",
                 "search": "",
                 "state": undefined,
@@ -177,7 +175,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                   "entries": Array [
                     Object {
                       "hash": "",
-                      "key": "n96pp4",
                       "pathname": "/",
                       "search": "",
                       "state": undefined,
@@ -191,7 +188,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                   "listen": [Function],
                   "location": Object {
                     "hash": "",
-                    "key": "n96pp4",
                     "pathname": "/",
                     "search": "",
                     "state": undefined,
@@ -203,7 +199,6 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
               location={
                 Object {
                   "hash": "",
-                  "key": "n96pp4",
                   "pathname": "/",
                   "search": "",
                   "state": undefined,
