@@ -9,7 +9,11 @@ const propTypes = {
   fetchPing: PropTypes.func.isRequired,
   pingMessage: PropTypes.string.isRequired,
   loading: PropTypes.bool.isRequired,
-  error: PropTypes.string.isRequired
+  error: PropTypes.string
+};
+
+const defaultProps = {
+  error: ''
 };
 
 class SampleReducer extends Component {
@@ -40,6 +44,7 @@ class SampleReducer extends Component {
 }
 
 SampleReducer.propTypes = propTypes;
+SampleReducer.defaultProps = defaultProps;
 
 export default reduxForm({
   form: 'pingForm'

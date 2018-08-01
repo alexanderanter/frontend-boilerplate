@@ -105,7 +105,10 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
   <MemoryRouter
     initialEntries={
       Array [
-        "/",
+        Object {
+          "key": "test",
+          "pathname": "/",
+        },
       ]
     }
   >
@@ -119,10 +122,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "8pxnsb",
+              "key": "test",
               "pathname": "/",
               "search": "",
-              "state": undefined,
             },
           ],
           "go": [Function],
@@ -133,10 +135,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "8pxnsb",
+            "key": "test",
             "pathname": "/",
             "search": "",
-            "state": undefined,
           },
           "push": [Function],
           "replace": [Function],
@@ -159,10 +160,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
             location={
               Object {
                 "hash": "",
-                "key": "8pxnsb",
+                "key": "test",
                 "pathname": "/",
                 "search": "",
-                "state": undefined,
               }
             }
             path="/"
@@ -177,10 +177,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                   "entries": Array [
                     Object {
                       "hash": "",
-                      "key": "8pxnsb",
+                      "key": "test",
                       "pathname": "/",
                       "search": "",
-                      "state": undefined,
                     },
                   ],
                   "go": [Function],
@@ -191,10 +190,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                   "listen": [Function],
                   "location": Object {
                     "hash": "",
-                    "key": "8pxnsb",
+                    "key": "test",
                     "pathname": "/",
                     "search": "",
-                    "state": undefined,
                   },
                   "push": [Function],
                   "replace": [Function],
@@ -203,10 +201,9 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
               location={
                 Object {
                   "hash": "",
-                  "key": "8pxnsb",
+                  "key": "test",
                   "pathname": "/",
                   "search": "",
-                  "state": undefined,
                 }
               }
               match={
@@ -418,6 +415,7 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                               destroy={[Function]}
                               dirty={false}
                               dispatch={[Function]}
+                              error=""
                               fetchPing={[Function]}
                               form="pingForm"
                               handleSubmit={[Function]}

@@ -45,7 +45,7 @@ describe('Routes', () => {
 
   describe('on / route', () => {
     it('should match snapshot for HomePage', () => {
-      initialEntries = ['/'];
+      initialEntries = [{ pathname: '/', key: 'test' }];
       expect(toJson(Wrapper())).toMatchSnapshot();
     });
   });
