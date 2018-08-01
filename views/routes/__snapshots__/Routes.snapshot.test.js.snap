@@ -1,0 +1,923 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes on / route should match snapshot for HomePage 1`] = `
+.c0 {
+  max-width: 1500px;
+  background: #fff;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.c1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: no-wrap;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  border: 8px solid;
+  border-radius: 50%;
+  border-top: 8px solid #001529;
+  border-bottom: 8px solid #001529;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: iECmZH 1s linear infinite;
+  animation: iECmZH 1s linear infinite;
+  margin: 0 auto 5px;
+}
+
+.c5 {
+  text-align: center;
+  margin: 5px 0;
+  color: #001529;
+  font-weight: bold;
+  overflow: hidden;
+  height: 1.3em;
+  margin-top: -0.3em;
+  line-height: 1.5em;
+  vertical-align: text-bottom;
+}
+
+.c5::after {
+  display: inline-table;
+  white-space: pre;
+  text-align: left;
+  content: '\\A.\\A..\\A...';
+  -webkit-animation: OedUF 2s steps(4) infinite;
+  animation: OedUF 2s steps(4) infinite;
+}
+
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <MemoryRouter
+    initialEntries={
+      Array [
+        "/",
+      ]
+    }
+  >
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "key": "8pxnsb",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "key": "8pxnsb",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Routes>
+        <Switch>
+          <Route
+            component={[Function]}
+            computedMatch={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+            exact={true}
+            location={
+              Object {
+                "hash": "",
+                "key": "8pxnsb",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            path="/"
+          >
+            <HomePage
+              history={
+                Object {
+                  "action": "POP",
+                  "block": [Function],
+                  "canGo": [Function],
+                  "createHref": [Function],
+                  "entries": Array [
+                    Object {
+                      "hash": "",
+                      "key": "8pxnsb",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    },
+                  ],
+                  "go": [Function],
+                  "goBack": [Function],
+                  "goForward": [Function],
+                  "index": 0,
+                  "length": 1,
+                  "listen": [Function],
+                  "location": Object {
+                    "hash": "",
+                    "key": "8pxnsb",
+                    "pathname": "/",
+                    "search": "",
+                    "state": undefined,
+                  },
+                  "push": [Function],
+                  "replace": [Function],
+                }
+              }
+              location={
+                Object {
+                  "hash": "",
+                  "key": "8pxnsb",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                }
+              }
+              match={
+                Object {
+                  "isExact": true,
+                  "params": Object {},
+                  "path": "/",
+                  "url": "/",
+                }
+              }
+            >
+              <BasePage
+                title="welcome"
+              >
+                <styled.div>
+                  <div
+                    className="c0"
+                  >
+                    <styled.h1>
+                      <h1
+                        className="c1"
+                      >
+                        welcome
+                      </h1>
+                    </styled.h1>
+                    <styled.div
+                      align="center"
+                      justify="space-around"
+                    >
+                      <div
+                        className="c2"
+                      >
+                        <p>
+                          Sample routes:
+                        </p>
+                        <Link
+                          replace={false}
+                          to="/page-one"
+                        >
+                          <a
+                            href="/page-one"
+                            onClick={[Function]}
+                          >
+                            Page 1
+                          </a>
+                        </Link>
+                        <Link
+                          replace={false}
+                          to="/page-two"
+                        >
+                          <a
+                            href="/page-two"
+                            onClick={[Function]}
+                          >
+                            Page 2
+                          </a>
+                        </Link>
+                        <Link
+                          replace={false}
+                          to="/page-three"
+                        >
+                          <a
+                            href="/page-three"
+                            onClick={[Function]}
+                          >
+                            Page 3
+                          </a>
+                        </Link>
+                      </div>
+                    </styled.div>
+                    <hr />
+                    <Connect(ReduxForm)>
+                      <ReduxForm
+                        error="error"
+                        fetchPing={[Function]}
+                        loading={true}
+                        pingMessage="Pong!"
+                      >
+                        <Connect(Form(SampleReducer))
+                          destroyOnUnmount={true}
+                          enableReinitialize={false}
+                          error="error"
+                          fetchPing={[Function]}
+                          forceUnregisterOnUnmount={false}
+                          form="pingForm"
+                          getFormState={[Function]}
+                          keepDirtyOnReinitialize={false}
+                          loading={true}
+                          persistentSubmitErrors={false}
+                          pingMessage="Pong!"
+                          pure={true}
+                          shouldAsyncValidate={[Function]}
+                          shouldError={[Function]}
+                          shouldValidate={[Function]}
+                          shouldWarn={[Function]}
+                          touchOnBlur={true}
+                          touchOnChange={false}
+                          updateUnregisteredFields={false}
+                        >
+                          <Form(SampleReducer)
+                            anyTouched={false}
+                            array={
+                              Object {
+                                "insert": [Function],
+                                "move": [Function],
+                                "pop": [Function],
+                                "push": [Function],
+                                "remove": [Function],
+                                "removeAll": [Function],
+                                "shift": [Function],
+                                "splice": [Function],
+                                "swap": [Function],
+                                "unshift": [Function],
+                              }
+                            }
+                            arrayInsert={[Function]}
+                            arrayMove={[Function]}
+                            arrayPop={[Function]}
+                            arrayPush={[Function]}
+                            arrayRemove={[Function]}
+                            arrayRemoveAll={[Function]}
+                            arrayShift={[Function]}
+                            arraySplice={[Function]}
+                            arraySwap={[Function]}
+                            arrayUnshift={[Function]}
+                            asyncValidating={false}
+                            autofill={[Function]}
+                            blur={[Function]}
+                            change={[Function]}
+                            clearAsyncError={[Function]}
+                            clearFields={[Function]}
+                            clearSubmit={[Function]}
+                            clearSubmitErrors={[Function]}
+                            destroy={[Function]}
+                            destroyOnUnmount={true}
+                            dirty={false}
+                            dispatch={[Function]}
+                            enableReinitialize={false}
+                            fetchPing={[Function]}
+                            focus={[Function]}
+                            forceUnregisterOnUnmount={false}
+                            form="pingForm"
+                            getFormState={[Function]}
+                            initialize={[Function]}
+                            initialized={false}
+                            invalid={false}
+                            keepDirtyOnReinitialize={false}
+                            loading={true}
+                            persistentSubmitErrors={false}
+                            pingMessage="Pong!"
+                            pristine={true}
+                            pure={true}
+                            registerField={[Function]}
+                            reset={[Function]}
+                            resetSection={[Function]}
+                            setSubmitFailed={[Function]}
+                            setSubmitSucceeded={[Function]}
+                            shouldAsyncValidate={[Function]}
+                            shouldError={[Function]}
+                            shouldValidate={[Function]}
+                            shouldWarn={[Function]}
+                            startAsyncValidation={[Function]}
+                            startSubmit={[Function]}
+                            stopAsyncValidation={[Function]}
+                            stopSubmit={[Function]}
+                            submit={[Function]}
+                            submitFailed={false}
+                            submitSucceeded={false}
+                            submitting={false}
+                            syncErrors={Object {}}
+                            syncWarnings={Object {}}
+                            touch={[Function]}
+                            touchOnBlur={true}
+                            touchOnChange={false}
+                            unregisterField={[Function]}
+                            untouch={[Function]}
+                            updateSyncErrors={[Function]}
+                            updateSyncWarnings={[Function]}
+                            updateUnregisteredFields={false}
+                            valid={true}
+                            validExceptSubmit={true}
+                            values={Object {}}
+                          >
+                            <SampleReducer
+                              anyTouched={false}
+                              array={
+                                Object {
+                                  "insert": [Function],
+                                  "move": [Function],
+                                  "pop": [Function],
+                                  "push": [Function],
+                                  "remove": [Function],
+                                  "removeAll": [Function],
+                                  "shift": [Function],
+                                  "splice": [Function],
+                                  "swap": [Function],
+                                  "unshift": [Function],
+                                }
+                              }
+                              asyncValidate={[Function]}
+                              asyncValidating={false}
+                              autofill={[Function]}
+                              blur={[Function]}
+                              change={[Function]}
+                              clearAsyncError={[Function]}
+                              clearFields={[Function]}
+                              clearSubmit={[Function]}
+                              clearSubmitErrors={[Function]}
+                              destroy={[Function]}
+                              dirty={false}
+                              dispatch={[Function]}
+                              fetchPing={[Function]}
+                              form="pingForm"
+                              handleSubmit={[Function]}
+                              initialize={[Function]}
+                              initialized={false}
+                              invalid={false}
+                              loading={true}
+                              pingMessage="Pong!"
+                              pristine={true}
+                              pure={true}
+                              reset={[Function]}
+                              resetSection={[Function]}
+                              submit={[Function]}
+                              submitFailed={false}
+                              submitSucceeded={false}
+                              submitting={false}
+                              touch={[Function]}
+                              untouch={[Function]}
+                              valid={true}
+                            >
+                              <styled.div
+                                align="center"
+                                justify="space-around"
+                              >
+                                <div
+                                  className="c2"
+                                >
+                                  <p>
+                                    Sample Reducer:
+                                  </p>
+                                  <Form
+                                    onSubmit={[Function]}
+                                  >
+                                    <form
+                                      onSubmit={[Function]}
+                                    >
+                                      <WithStyles(Button)
+                                        color="primary"
+                                        type="submit"
+                                        variant="contained"
+                                      >
+                                        <Button
+                                          classes={
+                                            Object {
+                                              "colorInherit": "MuiButton-colorInherit-20",
+                                              "contained": "MuiButton-contained-10",
+                                              "containedPrimary": "MuiButton-containedPrimary-11",
+                                              "containedSecondary": "MuiButton-containedSecondary-12",
+                                              "disabled": "MuiButton-disabled-19",
+                                              "extendedFab": "MuiButton-extendedFab-17",
+                                              "fab": "MuiButton-fab-16",
+                                              "flat": "MuiButton-flat-6",
+                                              "flatPrimary": "MuiButton-flatPrimary-7",
+                                              "flatSecondary": "MuiButton-flatSecondary-8",
+                                              "focusVisible": "MuiButton-focusVisible-18",
+                                              "fullWidth": "MuiButton-fullWidth-24",
+                                              "label": "MuiButton-label-2",
+                                              "mini": "MuiButton-mini-21",
+                                              "outlined": "MuiButton-outlined-9",
+                                              "raised": "MuiButton-raised-13",
+                                              "raisedPrimary": "MuiButton-raisedPrimary-14",
+                                              "raisedSecondary": "MuiButton-raisedSecondary-15",
+                                              "root": "MuiButton-root-1",
+                                              "sizeLarge": "MuiButton-sizeLarge-23",
+                                              "sizeSmall": "MuiButton-sizeSmall-22",
+                                              "text": "MuiButton-text-3",
+                                              "textPrimary": "MuiButton-textPrimary-4",
+                                              "textSecondary": "MuiButton-textSecondary-5",
+                                            }
+                                          }
+                                          color="primary"
+                                          component="button"
+                                          disableFocusRipple={false}
+                                          disabled={false}
+                                          fullWidth={false}
+                                          mini={false}
+                                          size="medium"
+                                          type="submit"
+                                          variant="contained"
+                                        >
+                                          <WithStyles(ButtonBase)
+                                            className="MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                            component="button"
+                                            disabled={false}
+                                            focusRipple={true}
+                                            focusVisibleClassName="MuiButton-focusVisible-18"
+                                            type="submit"
+                                          >
+                                            <ButtonBase
+                                              centerRipple={false}
+                                              className="MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                              classes={
+                                                Object {
+                                                  "disabled": "MuiButtonBase-disabled-26",
+                                                  "focusVisible": "MuiButtonBase-focusVisible-27",
+                                                  "root": "MuiButtonBase-root-25",
+                                                }
+                                              }
+                                              component="button"
+                                              disableRipple={false}
+                                              disableTouchRipple={false}
+                                              disabled={false}
+                                              focusRipple={true}
+                                              focusVisibleClassName="MuiButton-focusVisible-18"
+                                              tabIndex="0"
+                                              type="submit"
+                                            >
+                                              <button
+                                                className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                                disabled={false}
+                                                onBlur={[Function]}
+                                                onFocus={[Function]}
+                                                onKeyDown={[Function]}
+                                                onKeyUp={[Function]}
+                                                onMouseDown={[Function]}
+                                                onMouseLeave={[Function]}
+                                                onMouseUp={[Function]}
+                                                onTouchEnd={[Function]}
+                                                onTouchMove={[Function]}
+                                                onTouchStart={[Function]}
+                                                tabIndex="0"
+                                                type="submit"
+                                              >
+                                                <span
+                                                  className="MuiButton-label-2"
+                                                >
+                                                  Ping!
+                                                </span>
+                                                <WithStyles(TouchRipple)
+                                                  center={false}
+                                                  innerRef={[Function]}
+                                                >
+                                                  <TouchRipple
+                                                    center={false}
+                                                    classes={
+                                                      Object {
+                                                        "child": "MuiTouchRipple-child-32",
+                                                        "childLeaving": "MuiTouchRipple-childLeaving-33",
+                                                        "childPulsate": "MuiTouchRipple-childPulsate-34",
+                                                        "ripple": "MuiTouchRipple-ripple-29",
+                                                        "ripplePulsate": "MuiTouchRipple-ripplePulsate-31",
+                                                        "rippleVisible": "MuiTouchRipple-rippleVisible-30",
+                                                        "root": "MuiTouchRipple-root-28",
+                                                      }
+                                                    }
+                                                  >
+                                                    <TransitionGroup
+                                                      childFactory={[Function]}
+                                                      className="MuiTouchRipple-root-28"
+                                                      component="span"
+                                                      enter={true}
+                                                      exit={true}
+                                                    >
+                                                      <span
+                                                        className="MuiTouchRipple-root-28"
+                                                      />
+                                                    </TransitionGroup>
+                                                  </TouchRipple>
+                                                </WithStyles(TouchRipple)>
+                                              </button>
+                                            </ButtonBase>
+                                          </WithStyles(ButtonBase)>
+                                        </Button>
+                                      </WithStyles(Button)>
+                                    </form>
+                                  </Form>
+                                  <Spinner>
+                                    <styled.div>
+                                      <div
+                                        className="c3"
+                                      >
+                                        <styled.div>
+                                          <div
+                                            className="c4"
+                                          />
+                                        </styled.div>
+                                        <styled.p>
+                                          <p
+                                            className="c5"
+                                          >
+                                            Loading
+                                          </p>
+                                        </styled.p>
+                                      </div>
+                                    </styled.div>
+                                  </Spinner>
+                                </div>
+                              </styled.div>
+                            </SampleReducer>
+                          </Form(SampleReducer)>
+                        </Connect(Form(SampleReducer))>
+                      </ReduxForm>
+                    </Connect(ReduxForm)>
+                    <ReduxForm>
+                      <Connect(Form(SampleSocket))
+                        destroyOnUnmount={true}
+                        enableReinitialize={false}
+                        forceUnregisterOnUnmount={false}
+                        form="pingForm"
+                        getFormState={[Function]}
+                        keepDirtyOnReinitialize={false}
+                        persistentSubmitErrors={false}
+                        pure={true}
+                        shouldAsyncValidate={[Function]}
+                        shouldError={[Function]}
+                        shouldValidate={[Function]}
+                        shouldWarn={[Function]}
+                        touchOnBlur={true}
+                        touchOnChange={false}
+                        updateUnregisteredFields={false}
+                      >
+                        <Form(SampleSocket)
+                          anyTouched={false}
+                          array={
+                            Object {
+                              "insert": [Function],
+                              "move": [Function],
+                              "pop": [Function],
+                              "push": [Function],
+                              "remove": [Function],
+                              "removeAll": [Function],
+                              "shift": [Function],
+                              "splice": [Function],
+                              "swap": [Function],
+                              "unshift": [Function],
+                            }
+                          }
+                          arrayInsert={[Function]}
+                          arrayMove={[Function]}
+                          arrayPop={[Function]}
+                          arrayPush={[Function]}
+                          arrayRemove={[Function]}
+                          arrayRemoveAll={[Function]}
+                          arrayShift={[Function]}
+                          arraySplice={[Function]}
+                          arraySwap={[Function]}
+                          arrayUnshift={[Function]}
+                          asyncValidating={false}
+                          autofill={[Function]}
+                          blur={[Function]}
+                          change={[Function]}
+                          clearAsyncError={[Function]}
+                          clearFields={[Function]}
+                          clearSubmit={[Function]}
+                          clearSubmitErrors={[Function]}
+                          destroy={[Function]}
+                          destroyOnUnmount={true}
+                          dirty={false}
+                          dispatch={[Function]}
+                          enableReinitialize={false}
+                          focus={[Function]}
+                          forceUnregisterOnUnmount={false}
+                          form="pingForm"
+                          getFormState={[Function]}
+                          initialize={[Function]}
+                          initialized={false}
+                          invalid={false}
+                          keepDirtyOnReinitialize={false}
+                          persistentSubmitErrors={false}
+                          pristine={true}
+                          pure={true}
+                          registerField={[Function]}
+                          reset={[Function]}
+                          resetSection={[Function]}
+                          setSubmitFailed={[Function]}
+                          setSubmitSucceeded={[Function]}
+                          shouldAsyncValidate={[Function]}
+                          shouldError={[Function]}
+                          shouldValidate={[Function]}
+                          shouldWarn={[Function]}
+                          startAsyncValidation={[Function]}
+                          startSubmit={[Function]}
+                          stopAsyncValidation={[Function]}
+                          stopSubmit={[Function]}
+                          submit={[Function]}
+                          submitFailed={false}
+                          submitSucceeded={false}
+                          submitting={false}
+                          syncErrors={Object {}}
+                          syncWarnings={Object {}}
+                          touch={[Function]}
+                          touchOnBlur={true}
+                          touchOnChange={false}
+                          unregisterField={[Function]}
+                          untouch={[Function]}
+                          updateSyncErrors={[Function]}
+                          updateSyncWarnings={[Function]}
+                          updateUnregisteredFields={false}
+                          valid={true}
+                          validExceptSubmit={true}
+                          values={Object {}}
+                        >
+                          <SampleSocket
+                            anyTouched={false}
+                            array={
+                              Object {
+                                "insert": [Function],
+                                "move": [Function],
+                                "pop": [Function],
+                                "push": [Function],
+                                "remove": [Function],
+                                "removeAll": [Function],
+                                "shift": [Function],
+                                "splice": [Function],
+                                "swap": [Function],
+                                "unshift": [Function],
+                              }
+                            }
+                            asyncValidate={[Function]}
+                            asyncValidating={false}
+                            autofill={[Function]}
+                            blur={[Function]}
+                            change={[Function]}
+                            clearAsyncError={[Function]}
+                            clearFields={[Function]}
+                            clearSubmit={[Function]}
+                            clearSubmitErrors={[Function]}
+                            destroy={[Function]}
+                            dirty={false}
+                            dispatch={[Function]}
+                            form="pingForm"
+                            handleSubmit={[Function]}
+                            initialize={[Function]}
+                            initialized={false}
+                            invalid={false}
+                            pristine={true}
+                            pure={true}
+                            reset={[Function]}
+                            resetSection={[Function]}
+                            submit={[Function]}
+                            submitFailed={false}
+                            submitSucceeded={false}
+                            submitting={false}
+                            touch={[Function]}
+                            untouch={[Function]}
+                            valid={true}
+                          >
+                            <styled.div
+                              align="center"
+                              justify="space-around"
+                            >
+                              <div
+                                className="c2"
+                              >
+                                <p>
+                                  Sample Socket:
+                                </p>
+                                <Form
+                                  onSubmit={[Function]}
+                                >
+                                  <form
+                                    onSubmit={[Function]}
+                                  >
+                                    <WithStyles(Button)
+                                      color="primary"
+                                      type="submit"
+                                      variant="contained"
+                                    >
+                                      <Button
+                                        classes={
+                                          Object {
+                                            "colorInherit": "MuiButton-colorInherit-20",
+                                            "contained": "MuiButton-contained-10",
+                                            "containedPrimary": "MuiButton-containedPrimary-11",
+                                            "containedSecondary": "MuiButton-containedSecondary-12",
+                                            "disabled": "MuiButton-disabled-19",
+                                            "extendedFab": "MuiButton-extendedFab-17",
+                                            "fab": "MuiButton-fab-16",
+                                            "flat": "MuiButton-flat-6",
+                                            "flatPrimary": "MuiButton-flatPrimary-7",
+                                            "flatSecondary": "MuiButton-flatSecondary-8",
+                                            "focusVisible": "MuiButton-focusVisible-18",
+                                            "fullWidth": "MuiButton-fullWidth-24",
+                                            "label": "MuiButton-label-2",
+                                            "mini": "MuiButton-mini-21",
+                                            "outlined": "MuiButton-outlined-9",
+                                            "raised": "MuiButton-raised-13",
+                                            "raisedPrimary": "MuiButton-raisedPrimary-14",
+                                            "raisedSecondary": "MuiButton-raisedSecondary-15",
+                                            "root": "MuiButton-root-1",
+                                            "sizeLarge": "MuiButton-sizeLarge-23",
+                                            "sizeSmall": "MuiButton-sizeSmall-22",
+                                            "text": "MuiButton-text-3",
+                                            "textPrimary": "MuiButton-textPrimary-4",
+                                            "textSecondary": "MuiButton-textSecondary-5",
+                                          }
+                                        }
+                                        color="primary"
+                                        component="button"
+                                        disableFocusRipple={false}
+                                        disabled={false}
+                                        fullWidth={false}
+                                        mini={false}
+                                        size="medium"
+                                        type="submit"
+                                        variant="contained"
+                                      >
+                                        <WithStyles(ButtonBase)
+                                          className="MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                          component="button"
+                                          disabled={false}
+                                          focusRipple={true}
+                                          focusVisibleClassName="MuiButton-focusVisible-18"
+                                          type="submit"
+                                        >
+                                          <ButtonBase
+                                            centerRipple={false}
+                                            className="MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                            classes={
+                                              Object {
+                                                "disabled": "MuiButtonBase-disabled-26",
+                                                "focusVisible": "MuiButtonBase-focusVisible-27",
+                                                "root": "MuiButtonBase-root-25",
+                                              }
+                                            }
+                                            component="button"
+                                            disableRipple={false}
+                                            disableTouchRipple={false}
+                                            disabled={false}
+                                            focusRipple={true}
+                                            focusVisibleClassName="MuiButton-focusVisible-18"
+                                            tabIndex="0"
+                                            type="submit"
+                                          >
+                                            <button
+                                              className="MuiButtonBase-root-25 MuiButton-root-1 MuiButton-contained-10 MuiButton-containedPrimary-11 MuiButton-raised-13 MuiButton-raisedPrimary-14"
+                                              disabled={false}
+                                              onBlur={[Function]}
+                                              onFocus={[Function]}
+                                              onKeyDown={[Function]}
+                                              onKeyUp={[Function]}
+                                              onMouseDown={[Function]}
+                                              onMouseLeave={[Function]}
+                                              onMouseUp={[Function]}
+                                              onTouchEnd={[Function]}
+                                              onTouchMove={[Function]}
+                                              onTouchStart={[Function]}
+                                              tabIndex="0"
+                                              type="submit"
+                                            >
+                                              <span
+                                                className="MuiButton-label-2"
+                                              >
+                                                Ping Socket!
+                                              </span>
+                                              <WithStyles(TouchRipple)
+                                                center={false}
+                                                innerRef={[Function]}
+                                              >
+                                                <TouchRipple
+                                                  center={false}
+                                                  classes={
+                                                    Object {
+                                                      "child": "MuiTouchRipple-child-32",
+                                                      "childLeaving": "MuiTouchRipple-childLeaving-33",
+                                                      "childPulsate": "MuiTouchRipple-childPulsate-34",
+                                                      "ripple": "MuiTouchRipple-ripple-29",
+                                                      "ripplePulsate": "MuiTouchRipple-ripplePulsate-31",
+                                                      "rippleVisible": "MuiTouchRipple-rippleVisible-30",
+                                                      "root": "MuiTouchRipple-root-28",
+                                                    }
+                                                  }
+                                                >
+                                                  <TransitionGroup
+                                                    childFactory={[Function]}
+                                                    className="MuiTouchRipple-root-28"
+                                                    component="span"
+                                                    enter={true}
+                                                    exit={true}
+                                                  >
+                                                    <span
+                                                      className="MuiTouchRipple-root-28"
+                                                    />
+                                                  </TransitionGroup>
+                                                </TouchRipple>
+                                              </WithStyles(TouchRipple)>
+                                            </button>
+                                          </ButtonBase>
+                                        </WithStyles(ButtonBase)>
+                                      </Button>
+                                    </WithStyles(Button)>
+                                  </form>
+                                </Form>
+                                <p>
+                                  Click the button...
+                                </p>
+                              </div>
+                            </styled.div>
+                          </SampleSocket>
+                        </Form(SampleSocket)>
+                      </Connect(Form(SampleSocket))>
+                    </ReduxForm>
+                  </div>
+                </styled.div>
+              </BasePage>
+            </HomePage>
+          </Route>
+        </Switch>
+      </Routes>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
