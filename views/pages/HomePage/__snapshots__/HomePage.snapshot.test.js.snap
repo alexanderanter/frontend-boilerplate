@@ -31,7 +31,7 @@ exports[`HomePage without props Should match snapshot 1`] = `
     </Link>
   </styled.div>
   <hr />
-  <Connect(ReduxForm) />
+  <Connect(SampleReducerContainer) />
   <ReduxForm />
 </BasePage>
 `;
