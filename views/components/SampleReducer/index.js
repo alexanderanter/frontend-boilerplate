@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { reduxForm, Form } from 'redux-form';
@@ -6,8 +6,8 @@ import FlexBox from '../../common/FlexBox';
 import Spinner from '../../common/Spinner';
 
 const propTypes = {
-  fetchPing: PropTypes.func.isRequired,
   pingMessage: PropTypes.string.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
   loading: PropTypes.bool.isRequired,
   error: PropTypes.string
 };
@@ -16,32 +16,22 @@ const defaultProps = {
   error: ''
 };
 
-class SampleReducer extends Component {
-  handleSubmit = e => {
-    e.preventDefault();
-    /* eslint-disable */
-    this.props.fetchPing();
-    /* eslint-enable */
-  };
+const SampleReducer = ({ pingMessage, handleSubmit, loading, error }) => {
+  const message = error || pingMessage;
 
-  render() {
-    const { pingMessage, loading, error } = this.props;
-    const message = error || pingMessage;
-
-    return (
-      <FlexBox align="center" justify="space-around">
-        <p>Sample Reducer:</p>
-        <Form onSubmit={this.handleSubmit}>
-          <Button type="submit" variant="contained" color="primary">
-            Ping!
-          </Button>
-        </Form>
-        {!loading && <p>{message ? `Server responded with: ${message}` : `Click the button...`}</p>}
-        {loading && <Spinner />}
-      </FlexBox>
-    );
-  }
-}
+  return (
+    <FlexBox align="center" justify="space-around">
+      <p>Sample Reducer:</p>
+      <Form onSubmit={handleSubmit}>
+        <Button type="submit" variant="contained" color="primary">
+          Ping!
+        </Button>
+      </Form>
+      {!loading && <p>{message ? `Server responded with: ${message}` : `Click the button...`}</p>}
+      {loading && <Spinner />}
+    </FlexBox>
+  );
+};
 
 SampleReducer.propTypes = propTypes;
 SampleReducer.defaultProps = defaultProps;
