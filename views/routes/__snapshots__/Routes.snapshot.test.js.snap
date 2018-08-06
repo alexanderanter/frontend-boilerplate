@@ -35,6 +35,61 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
   flex-wrap: no-wrap;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.c4 {
+  border: 8px solid;
+  border-radius: 50%;
+  border-top: 8px solid #001529;
+  border-bottom: 8px solid #001529;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: iECmZH 1s linear infinite;
+  animation: iECmZH 1s linear infinite;
+  margin: 0 auto 5px;
+}
+
+.c5 {
+  text-align: center;
+  margin: 5px 0;
+  color: #001529;
+  font-weight: bold;
+  overflow: hidden;
+  height: 1.3em;
+  margin-top: -0.3em;
+  line-height: 1.5em;
+  vertical-align: text-bottom;
+}
+
+.c5::after {
+  display: inline-table;
+  white-space: pre;
+  text-align: left;
+  content: '\\A.\\A..\\A...';
+  -webkit-animation: OedUF 2s steps(4) infinite;
+  animation: OedUF 2s steps(4) infinite;
+}
+
 <Provider
   store={
     Object {
@@ -397,10 +452,10 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                                       Sample Reducer:
                                     </p>
                                     <Form
-                                      onSubmit={Object {}}
+                                      onSubmit={[Function]}
                                     >
                                       <form
-                                        onSubmit={Object {}}
+                                        onSubmit={[Function]}
                                       >
                                         <WithStyles(Button)
                                           color="primary"
@@ -532,9 +587,26 @@ exports[`Routes on / route should match snapshot for HomePage 1`] = `
                                         </WithStyles(Button)>
                                       </form>
                                     </Form>
-                                    <p>
-                                      Server responded with: [object Object]
-                                    </p>
+                                    <Spinner>
+                                      <styled.div>
+                                        <div
+                                          className="c3"
+                                        >
+                                          <styled.div>
+                                            <div
+                                              className="c4"
+                                            />
+                                          </styled.div>
+                                          <styled.p>
+                                            <p
+                                              className="c5"
+                                            >
+                                              Loading
+                                            </p>
+                                          </styled.p>
+                                        </div>
+                                      </styled.div>
+                                    </Spinner>
                                   </div>
                                 </styled.div>
                               </SampleReducer>
