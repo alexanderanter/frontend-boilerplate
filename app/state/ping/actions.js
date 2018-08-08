@@ -1,6 +1,6 @@
 import { RSAA } from 'redux-api-middleware';
 import types from './types';
-import BASE_URI from '../../configs/URI';
+import BASE_URI from '../../config/URI';
 
 export const getPingRequest = () => ({
   [RSAA]: {
