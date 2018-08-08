@@ -16,5 +16,13 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.(css|less)$': 'identity-obj-proxy'
   },
-  snapshotSerializers: ['enzyme-to-json/serializer']
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: -10
+    }
+  }
 };
