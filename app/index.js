@@ -5,7 +5,7 @@ import createHistory from 'history/createBrowserHistory';
 import { ConnectedRouter } from 'connected-react-router';
 import { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
-import webFontConfig from './configs/webfonts';
+import webFontConfig from './config/webfonts';
 import Routes from './views/routes';
 import configureStore from './state';
 import colors from './constants/colors';
