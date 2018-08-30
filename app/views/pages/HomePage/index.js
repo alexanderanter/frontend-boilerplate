@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import BasePage from '../BasePage';
 import FlexBox from '../../common/FlexBox';
 import SampleSocket from '../../components/SampleSocket';
-import SampleReducerContainer from '../../containers/SampleReducerContainer';
+import SampleReducer from '../../containers/SampleReducerContainer';
 
 const HomePage = () => (
   <BasePage title="welcome">
@@ -14,7 +14,7 @@ const HomePage = () => (
       <Link to="/page-three">Page 3</Link>
     </FlexBox>
     <hr />
-    <SampleReducerContainer />
+    <SampleReducer />
     <SampleSocket />
   </BasePage>
 );
