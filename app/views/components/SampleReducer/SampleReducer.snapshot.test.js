@@ -11,7 +11,7 @@ describe('SampleReducer', () => {
 
   const Wrapper = () => {
     if (!wrapper) {
-      wrapper = shallow(<SampleReducer {...props}>{props.children}</SampleReducer>);
+      wrapper = shallow(<SampleReducer {...props} />);
     }
     return wrapper;
   };
