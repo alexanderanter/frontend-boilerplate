@@ -12,7 +12,7 @@ class SampleSocket extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.socketConnection.send(JSON.stringify({ type: 'sent', msg: 'ping' }));
+    this.socketConnection.send(JSON.stringify({ type: 'ping', msg: 'ping' }));
     this.socketConnection.onmessage = event => this.setState({ message: event.data });
   };
 
