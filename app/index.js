@@ -32,8 +32,8 @@ WebFont.load(webFontConfig);
 
 render(
   <Provider store={store}>
-    <GlobalStyle />
     <ConnectedRouter history={history}>
+      <GlobalStyle />
       <Routes />
     </ConnectedRouter>
   </Provider>,
