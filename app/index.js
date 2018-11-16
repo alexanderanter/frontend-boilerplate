@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
@@ -31,11 +31,13 @@ const history = createHistory();
 WebFont.load(webFontConfig);
 
 render(
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <GlobalStyle />
-      <Routes />
-    </ConnectedRouter>
-  </Provider>,
+  <Fragment>
+    <GlobalStyle />
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <Routes />
+      </ConnectedRouter>
+    </Provider>
+  </Fragment>,
   document.getElementById('app')
 );

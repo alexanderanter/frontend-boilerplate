@@ -10,10 +10,13 @@ import pingReducer from './ping';
 const history = createHistory();
 
 const composeEnhancers = composeWithDevTools({});
-const rootReducer = combineReducers({
-  form,
-  ping: pingReducer
-});
+
+const createRootReducer = () =>
+  combineReducers({
+    form,
+    router: connectRouter(history),
+    ping: pingReducer
+  });
 
 /**
  * Takes initial state and returns redux store configured
@@ -22,7 +25,7 @@ const rootReducer = combineReducers({
  */
 export default function configureStore(initialState) {
   return createStore(
-    connectRouter(history)(rootReducer),
+    createRootReducer(),
     initialState,
     composeEnhancers(
       applyMiddleware(apiMiddleware),
