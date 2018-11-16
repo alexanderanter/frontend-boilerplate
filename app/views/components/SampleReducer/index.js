@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { reduxForm, Form } from 'redux-form';
-import FlexBox from '../../common/FlexBox';
-import Spinner from '../../common/Spinner';
+import { Spinner, FlexBox } from 'blockscope-ui';
 
 const propTypes = {
   pingMessage: PropTypes.string.isRequired,

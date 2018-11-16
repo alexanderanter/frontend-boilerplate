@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FlexBox } from 'blockscope-ui';
 import BasePage from '../BasePage';
-import FlexBox from '../../common/FlexBox';
 import SampleSocket from '../../components/SampleSocket';
 import SampleReducer from '../../containers/SampleReducerContainer';
 

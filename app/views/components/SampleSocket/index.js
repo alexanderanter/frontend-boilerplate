@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import { reduxForm, Form } from 'redux-form';
-import FlexBox from '../../common/FlexBox';
+import { FlexBox } from 'blockscope-ui';
 
 class SampleSocket extends Component {
   socketConnection = new WebSocket('ws://localhost:8080');
