@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import createHistory from 'history/createBrowserHistory';
 import { ConnectedRouter } from 'connected-react-router';
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import WebFont from 'webfontloader';
 import webFontConfig from './config/webfonts';
 import Routes from './views/routes';
@@ -11,7 +11,7 @@ import configureStore from './state';
 import colors from './constants/colors';
 
 /* eslint-disable no-unused-expressions */
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background: ${colors.background};
@@ -32,6 +32,7 @@ WebFont.load(webFontConfig);
 
 render(
   <Provider store={store}>
+    <GlobalStyle />
     <ConnectedRouter history={history}>
       <Routes />
     </ConnectedRouter>
