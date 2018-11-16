@@ -33,8 +33,8 @@ module.exports = {
         exclude: /(node_modules|bower_compontents)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015'],
-          plugins: ['babel-plugin-transform-class-properties', 'transform-object-rest-spread']
+          presets: ['@babel/preset-env', '@babel/preset-react'],
+          plugins: ['@babel/plugin-proposal-class-properties']
         }
       },
       {
